@@ -1,14 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.top-head{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
 }
-
 .navbar{
     background: rgb(43,43,43);
 background: linear-gradient(180deg, rgba(43,43,43,1) 16%, rgba(14,14,14,1) 50%);
 border-top-left-radius: 18px;
 
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white!important;
+    font-family: 'Duepuntozero', sans-serif;
+    font-size: 19px;
 }
 .head-icon{
     width: 20px;
@@ -20,34 +23,46 @@ border-top-left-radius: 18px;
     font-family: 'D-DIN Condensed', sans-serif;
     font-size: 22px;
 }
-.top-head{
-    background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
+button:focus{
+    outline: 0;
+    border:none;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: white!important;
+.btn-slider{
+    border: none;
+    outline: 0;
+    background-color: #ec0b8c;
+    color: white;
     font-family: 'Duepuntozero', sans-serif;
-    font-size: 19px;
+    font-size: 25px;
+    border-radius: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
 }
 .span-content{
     font-family: 'Ananda Black', sans-serif;
     font-size: 29px;
-
 }
 .p-content{
     font-size: 30px;
     font-family: 'D-DIN Condensed', sans-serif;
 }
-.logoo{
-    background-color: white;
-}
+
 .toggle-cat{
     width:22px
+}
+.item-cat a{
+    color: black;
+    font-size: 16px;
+    font-family: 'Duepuntozero', sans-serif;
+}
+.accordion-body{
+    background-color: #f1d4e5;
+   
+    
 }
 .logo{
     width: 100%;
 }
-
 .second-block .second-content .p-content{
     padding-right: 18px;
     padding-top: 6px;
@@ -72,10 +87,15 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
     text-align: center;
   
 }
+.card-text{
+    font-family: 'Duepuntozero ';
+    font-size: 13px;
+}
 .nav-link{
     display: inline-block;
     color: #000;
     text-decoration: none;
+    font-family: 'Duepuntozero bold', sans-serif;
 }
 .icons{
     width: 20px;
@@ -100,12 +120,12 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
     margin-left: -29px;
 
   }
-  .bleu{
+.bleu{
     border-top: 10px solid #20ace2;
     width: 37px;
 }
    
-  .pink{
+.pink{
     border-top: 10px solid #ec0b8c;
     width: 27px;
   }
@@ -124,31 +144,8 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
     max-height: 609px !important
     
 }
-.carousel-caption{
+.carousel-caption {
     bottom: 47%;
-    
-    
-    
-}
-
-@media screen and (max-width: 992px) {
-    .carousel-caption{
-        bottom: 22%;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .carousel-caption{
-        bottom: 37%;
-    }
-  }
-
-
-.bott{
-    height: 25px;
-   margin: 10px;
-   width: 25px;
-   background: rgb(14,22,228);
-    background: linear-gradient(90deg, rgba(14,22,228,1) 50%, rgba(222,5,119,1) 50%);
 }
 .text-main{
     font-size: 21px;
@@ -159,27 +156,40 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
     color: black!important; 
    border: none;
 }
-.main{
-    flex-wrap: wrap-reverse;
-}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
      color: #fff; 
      background-color: #20ace2; 
+     
 }
 .card{
     margin: 25px;
 }
 .accordion-button{
+    font-family: 'Duepuntozero bold', sans-serif;
     border: none;
 }
+h3{
+    font-family: 'Duepuntozero bold', sans-serif;
+    font-size:35px;
+}
+
 
 .accordion-header:hover{
     background-color:  #ec0b8c;
-    color: white;
+    color: white!important;
+    
 
 }
-.accordion-header:focus{
-    background-color:  #ec0b8c;
+.accordion-button:hover{
+   color: white; 
+}
+.accordion-button:focus {
+     z-index: 0!important; 
+    border: none;
+    border-color: none;
+    box-shadow: none; 
+    outline: 0!important;
 }
 .nouveautes{
     background: #20ace2;
@@ -200,7 +210,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
     width: 35px;
 }
 .back-img{
-    background-image: url(../../img/back-demande.png);
+    background-image: url(../../img/back-demande.jpg);
     min-height: 260px;
     background-size: cover;
 }
@@ -209,13 +219,39 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(43,43,43,1) 84%);
     background: radial-gradient(circle, rgba(106,42,79,0.7959558823529411) 1%, rgba(19,19,18,0.835171568627451) 91%);
     min-height: inherit;
 }
+
+.text-devis{
+    font-family: 'Duepuntozero', sans-serif;
+    font-size: 37px;
+}
+.btn-devis{
+    border-radius: 20px;
+    background-color: #ffcd1d;
+    border: none;
+    font-family: 'Duepuntozero', sans-serif;
+    font-size: 27px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+}
 .text-media{
     text-align: justify;
+    font-family: 'Duepuntozero', sans-serif;
+
+}
+.text-media h4{
+    color: #ed1b93;
+    font-family: 'Duepuntozero bold', sans-serif;
+    font-size: 30px;
 }
 footer{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(104,104,104,1) 0%, rgba(51,51,51,1) 7%);
+    font-family: 'Duepuntozero';
     
+}
+.logo-footer{
+    color: #aeaeae;
 }
 .items-footer{
     display: inline-grid;
@@ -224,13 +260,53 @@ footer{
     text-decoration: none;
     color: white;
 }
+.sociel-media a{
+    color:#949090 ;
+}
 .sociel-media .fab{
     font-size:30px;
 }
+.navbar-light .navbar-toggler{
+    background-color: #20ace2;
+}
+
 
 @media screen and (max-width: 576px) {
     .ms-sm-1{
         margin-left: -5.75rem!important;
         padding-right: 101px;
     }
+    .btn-color{
+        min-width:  110px;
+    }
+    
   }
+  @media screen and (max-width: 768px) {
+   
+    .main{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .carousel-caption{
+        bottom: 14%;
+    }
+    .icon {
+        display: inline-flex;
+        transform: rotate(103deg);
+        margin-left: -28px;
+    }
+    .bleu {
+        border-top: 10px solid #20ace2;
+        width: 30px;
+    }
+    .pink {
+        border-top: 10px solid #ec0b8c;
+        width: 30px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .carousel-caption{
+        bottom: 16%;
+    }
+  }
+ 
